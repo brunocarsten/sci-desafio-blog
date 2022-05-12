@@ -12,7 +12,7 @@
                             class="mx-auto"
                             width="180px"
                             height="180px"
-                            src="/images/logo-betouch.jpg"
+                            src="/images/logo.png"
                         />
                     </v-col>
                     <v-col cols="6">

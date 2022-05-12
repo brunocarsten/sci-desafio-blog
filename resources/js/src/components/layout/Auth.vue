@@ -1,5 +1,5 @@
 <template>
-    <v-app>
+    <v-app class="auth">
         <v-main>
             <v-container fill-height>
                 <Child />
@@ -13,7 +13,7 @@ import Child from "../Child";
 
 export default {
     name: "BasicLayout",
-    components: { Child },
+    components: { Child }
 };
 </script>
 
