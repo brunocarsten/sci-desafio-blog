@@ -85,7 +85,7 @@
                     <v-dialog v-model="remove" persistent max-width="600px">
                         <v-card>
                             <v-card-title class="text-h5 error lighten-2">
-                                Você deseja excluir esse RMA?
+                                Você deseja excluir esse POST?
                             </v-card-title>
                             <v-card-text>
                                 Ao remover esse Post, todos os conteúdos
