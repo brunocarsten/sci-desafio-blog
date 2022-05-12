@@ -1,0 +1,28 @@
+footer {
+    background: black;
+    .footer-branding {
+        // background: $secondary-color;
+        padding-top: 35px;
+        text-align: center;
+        > div {
+            img {
+                height: 100px;
+                object-fit: contain;
+            }
+            p {
+                // color: $primary-font;
+                color: #fff;
+                font-weight: 500;
+                margin-top: 20px;
+            }
+        }
+    }
+    .author {
+        padding: 10px 0;
+
+        p {
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+}

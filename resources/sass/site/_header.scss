@@ -1,0 +1,88 @@
+header {
+    box-shadow: 0px 1px 5px #ccc;
+    background: black;
+    height: 175px;
+    .stripe {
+        padding: 5px;
+        // background: $primary-color;
+        // @include breakpoint($sm) {
+        //     display: none;
+        // }
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            li {
+                // width: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .header-brand-search {
+        display: flex;
+        align-items: center;
+        height: 140px;
+        > div {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            // @include breakpoint($sm) {
+            //     flex-direction: column;
+            // }
+            .logo {
+                // @include breakpoint($sm) {
+                //     margin-top: 10px;
+                // }
+                img {
+                    height: 90px;
+                    // @include breakpoint($sm) {
+                    //     height: 50px;
+                    // }
+                }
+            }
+            .mobile-menu {
+                position: absolute;
+                right: 22px;
+                top: 17px;
+                z-index: 10;
+                // @media (min-width: $sm) {
+                //     display: none;
+                // }
+            }
+
+            // .search {
+            //     width: 60%;
+            //     display: flex;
+            //     justify-content: center;
+            //     align-items: center;
+            //     position: relative;
+            //     // @include breakpoint($sm) {
+            //     //     margin-top: 3rem;
+            //     //     width: 100%;
+            //     // }
+            //     input {
+            //         background: #fff;
+            //         width: 100%;
+            //         padding: 10px;
+            //         box-shadow: 1px 1px 4px #ccc;
+            //         border-radius: 5px;
+            //     }
+            //     .search-submit {
+            //         position: absolute;
+            //         right: 0;
+            //         height: 38px;
+            //         width: 50px;
+            //         border-top-right-radius: 5px;
+            //         border-bottom-right-radius: 5px;
+            //         // background: $primary-color;
+            //     }
+            // }
+        }
+    }
+}
