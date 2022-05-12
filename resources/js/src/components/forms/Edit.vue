@@ -105,8 +105,18 @@ export default {
             const response = await this.$http
                 .put(`post/${this.item.id}`, { ...this.data })
                 .catch(err => {
-                    console.log(err);
+                    this.$store.dispatch("Snack/updateSnack", {
+                        active: true,
+                        text: "Ocorreu um erro...",
+                        color: "error"
+                    });
+                    return;
                 });
+            this.$store.dispatch("Snack/updateSnack", {
+                active: true,
+                text: "Cadastrado com sucesso!",
+                color: "success"
+            });
             await this.$store.dispatch("Post/fetchPosts");
             this.loading = false;
             this.handleDialog();

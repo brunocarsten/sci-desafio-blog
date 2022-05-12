@@ -122,13 +122,21 @@ export default {
 
         async createItem() {
             this.loading = true;
-            console.log(this.data);
             const response = await this.$http
                 .post(this.route, { ...this.data })
                 .catch(err => {
-                    console.log(err);
+                    this.$store.dispatch("Snack/updateSnack", {
+                        active: true,
+                        text: "Ocorreu um erro...",
+                        color: "error"
+                    });
+                    return;
                 });
-            this.data = [];
+            this.$store.dispatch("Snack/updateSnack", {
+                active: true,
+                text: "Cadastrado com sucesso!",
+                color: "success"
+            });
             await this.$store.dispatch("Tag/fetchTags");
             await this.$store.dispatch("Post/fetchPosts");
             this.handleDialog();

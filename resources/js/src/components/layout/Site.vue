@@ -2,7 +2,7 @@
     <v-app>
         <v-main>
             <Header />
-            <v-container style="height : 100vh">
+            <v-container>
                 <Child />
             </v-container>
             <Footer />

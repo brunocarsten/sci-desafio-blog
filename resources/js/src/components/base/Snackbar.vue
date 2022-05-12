@@ -1,18 +1,14 @@
 <template>
-    <v-snackbar v-model="value">
-        {{ text }}
+    <v-snackbar dark v-model="snack.active" :color="snack.color">
+        {{ snack.text }}
     </v-snackbar>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 export default {
-    props: {
-        value: {
-            type: Boolean
-        },
-        text: {
-            type: String
-        }
+    computed: {
+        ...mapGetters("Snack", ["snack"])
     }
 };
 </script>
